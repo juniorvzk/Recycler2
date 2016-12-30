@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/profilePic"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Nome do Autor"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginRight="15dp"
+
+        android:textAppearance="?android:textAppearanceLarge"
+        android:gravity="left"
+        android:id="@+id/textNome"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/profilePic"
+        android:layout_toEndOf="@+id/profilePic"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:text="Objetivo"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/textObj"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_marginRight="15dp"
+
+        android:layout_above="@+id/dishPic"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/profilePic"
+        android:layout_alignLeft="@+id/textNome"
+        android:layout_alignStart="@+id/textNome"
+        android:layout_toRightOf="@+id/profilePic" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/dishPic"
+        android:layout_below="@+id/profilePic"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <TextView
+        android:text="kcal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:textAppearance="?android:textAppearanceMedium"
+
+        android:layout_below="@+id/textData"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textCalorias"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <TextView
+        android:text="Dia DD/MM/YY"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+
+
+        android:textAppearance="?android:textAppearanceMedium"
+
+        android:id="@+id/textData"
+
+        android:layout_below="@+id/dishPic"
+        android:layout_alignRight="@+id/textCalorias"
+        android:layout_alignEnd="@+id/textCalorias"
+        android:layout_toRightOf="@+id/textMeal"
+        android:layout_toEndOf="@+id/textMeal" />
+
+    <TextView
+        android:text="Meal"
+        android:textAppearance="?android:textAppearanceMedium"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textMeal"
+
+        android:layout_marginRight="5dp"
+
+        android:layout_alignBottom="@+id/textData"
+        android:layout_alignLeft="@+id/dishPic"
+        android:layout_alignStart="@+id/dishPic"
+        android:layout_below="@+id/dishPic" />
+
+
+</RelativeLayout>
